@@ -1,0 +1,24 @@
+.wrap{
+  background: black;
+  height: 100vh;
+  text-align: center;
+}
+
+.wrap :first-child{
+  margin-top: 50vh;
+}
+.floatMessage{
+  background: black;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+.waves-light{
+  background: red;
+  width: 50vh;
+  display: inline-block;
+  margin: 1.2rem;
+}
+
+
