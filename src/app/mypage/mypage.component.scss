@@ -1,0 +1,21 @@
+.wrap {
+  background: red;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  width: 40%;
+  margin: 2% 2%;
+}
+
+@media screen and (max-width: 893px) { 
+  .wrap{
+    width: 100vw;
+  }
+  .card {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+}
