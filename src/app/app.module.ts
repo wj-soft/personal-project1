@@ -5,13 +5,17 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MypageComponent } from './mypage/mypage.component';
+import { NaviComponent } from './navi/navi.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    DashboardComponent
+    DashboardComponent,
+    MypageComponent,
+    NaviComponent
   ],
   imports: [
     BrowserModule,
