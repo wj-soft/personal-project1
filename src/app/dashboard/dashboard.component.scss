@@ -6,13 +6,9 @@
   height: 100vh;    
 } 
 
-.wrap div {    
-  float: left;
-  display: inline-block;    
-  min-height: 100vh;
-}    
 .menu-list {    
-  width: 30%;   
+  width: 30%; 
+  height: 100%;  
   max-width: 250px; 
   background: #cfd8dc;  
 }  
@@ -23,6 +19,8 @@
   min-width: 69%;   
   text-align: center; 
 }
+
+
 
 @media screen and (max-width: 893px) { 
   div {
