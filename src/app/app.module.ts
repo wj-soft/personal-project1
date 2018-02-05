@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MypageComponent } from './mypage/mypage.component';
 import { NaviComponent } from './navi/navi.component';
 
+import { AppRoutingModule } from './app-routing.module';
+import { HelloRoutingComponent } from './hello-routing/hello-routing.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { NaviComponent } from './navi/navi.component';
     MainComponent,
     DashboardComponent,
     MypageComponent,
-    NaviComponent
+    NaviComponent,
+    HelloRoutingComponent
   ],
   imports: [
     BrowserModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AppRoutingModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
