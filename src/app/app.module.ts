@@ -11,6 +11,10 @@ import { NaviComponent } from './navi/navi.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HelloRoutingComponent } from './hello-routing/hello-routing.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,10 +27,12 @@ import { HelloRoutingComponent } from './hello-routing/hello-routing.component';
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [AngularFireModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
