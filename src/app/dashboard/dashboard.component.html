@@ -8,12 +8,16 @@
       </div>
       <div class="my-info">
         프로플정보가 들어가는공간
+        <h2>{{authService.name}}</h2>
       </div>
       <div>
         메뉴리스트 들어가는 공간
         <ul>
           <li>회원탈퇴</li>
-          <li>로그아웃</li>
+          <li><button  (click)="authService.logout()">로그아웃</button></li>
+          <li>
+            <button (click)="authService.getUser()">유저정보</button>
+          </li>
         </ul>
       </div>
       <router-outlet name="hello"></router-outlet>

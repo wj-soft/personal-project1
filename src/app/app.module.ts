@@ -16,6 +16,9 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
+import { AuthService } from './auth.service'
+import { AuthGuard } from './auth.guard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,7 @@ import { environment } from '../environments/environment';
     AngularFireAuthModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [AngularFireModule],
+  providers: [AngularFireModule, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
