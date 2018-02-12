@@ -13,6 +13,7 @@ import { HelloRoutingComponent } from './hello-routing/hello-routing.component';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuth, AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -29,7 +30,8 @@ import { environment } from '../environments/environment';
     MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [AngularFireModule],

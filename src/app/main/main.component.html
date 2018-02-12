@@ -1,60 +1,6 @@
 <h1 class="floatMessage">Hello World!</h1>
 <div class="wrap">
-  <button type="button" class="btn btn-blue-grey waves-light" data-toggle="modal" data-target="#login" (click)="loginModal.show()" mdbRippleRadius>로그인</button><br>
-  <button type="button" class="btn btn-blue-grey waves-light" data-toggle="modal" data-target="#signin" (click)="signinModal.show()" mdbRippleRadius>회원가입</button>
+  <button type="button" class="btn btn-blue-grey waves-light"  (click)="login()" mdbRippleRadius>ENTER</button>
 </div>
 
-<!-- 로그인 -->
-<div mdbModal #loginModal="mdb-modal" class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <form>
-          <p class="h5 text-center mb-4">로그인</p>
-          <div class="md-form">
-             <i class="fa fa-envelope prefix grey-text"></i>
-            <input type="text" id="orangeForm-email-login" class="form-control" mdbActive>
-            <label for="orangeForm-email">Your email</label>
-          </div>
-          <div class="md-form">
-            <i class="fa fa-lock prefix grey-text"></i>
-            <input type="password" id="orangeForm-pass-login" class="form-control" mdbActive>
-            <label for="orangeForm-pass">Your password</label>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-sm" mdbRippleRadius>LOGIN</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- 회원가입 -->
-
-<div mdbModal #signinModal="mdb-modal" class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        <form>
-          <p class="h5 text-center mb-4">회원가입</p>
-          <div class="md-form">
-            <i class="fa fa-envelope prefix grey-text"></i>
-            <input type="text" id="orangeForm-email-signin" class="form-control" mdbActive>
-            <label for="orangeForm-email">Your email</label>
-          </div>
-          <div class="md-form">
-            <i class="fa fa-lock prefix grey-text"></i>
-            <input type="password" id="orangeForm-pass-signin" class="form-control" mdbActive>
-            <label for="orangeForm-pass">Your password</label>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-sm" mdbRippleRadius>SIGNIN</button>
-      </div>
-    </div>
-  </div>
-</div>
