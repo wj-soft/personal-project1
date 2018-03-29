@@ -13,6 +13,7 @@ export class AuthService {
 
 
   constructor(public afAuth: AngularFireAuth, private router: Router) { 
+
   }
 
   login() {
@@ -48,6 +49,7 @@ export class AuthService {
       console.log("  Name: " + user.displayName);
       console.log("  Email: " + user.email);
       console.log("  Photo URL: " + user.photoURL);
+      return {name: user.displayName, email:user.email}
     } else {
       // No user is signed in.
     }
